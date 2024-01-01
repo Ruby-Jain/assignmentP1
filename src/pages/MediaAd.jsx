@@ -1,7 +1,8 @@
+import MediaForm from '../components/MediaForm'
 export default function MediaAd() {
   return (
     <>
-      <div>MediaAd</div>
+      <MediaForm/>
     </>
   );
 }

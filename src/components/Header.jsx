@@ -7,9 +7,10 @@ export default function Header() {
   return (
     <Sheet
       variant="solid"
-      color="primary"
       invertedColors
       sx={{
+        border:'2px solid black',
+        backgroundColor:'white',
         display: "flex",
         alignItems: "center",
         flexGrow: 1,
@@ -17,18 +18,19 @@ export default function Header() {
         minWidth: "min-content",
       }}
     >
-      <Box sx={{ flex: 1, display: "flex", gap: 1, px: 2 }}>App Logo</Box>
+      <Box sx={{ color:'black',fontFamily:'verdana',fontWeight:'bolder',flex: 1, display: "flex", gap: 1, px: 2 }}>APP LOGO</Box>
       <Box sx={{ display: "flex", flexShrink: 0, gap: 2 }}>
+      <Link to={"/"}>
+          <Button sx={{ display: { xs: "none", md: "inline-flex" } }}>
+            DASHBOARD
+          </Button>
+        </Link>
         <Link to={"/create-ad"}>
           <Button sx={{ display: { xs: "none", md: "inline-flex" } }}>
-            Create Ads
+            CREATE ADS
           </Button>
         </Link>
-        <Link to={"/"}>
-          <Button sx={{ display: { xs: "none", md: "inline-flex" } }}>
-            Dashboard
-          </Button>
-        </Link>
+        
       </Box>
     </Sheet>
   );

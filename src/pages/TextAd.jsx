@@ -1,9 +1,9 @@
-import TextMediaForm from "../components/TextMediaForm";
+import TextForm from "../components/TextForm";
 
 export default function TextAd() {
   return (
     <>
-      <TextMediaForm />
+      <TextForm />
     </>
   );
 }

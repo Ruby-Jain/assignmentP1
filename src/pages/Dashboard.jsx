@@ -1,10 +1,16 @@
 import AdTable from "../components/AdTable";
+import AdDonut from "../components/AdDonut";
+import { Box } from "@mui/joy";
 
 export default function Dashboard() {
   return (
     <>
-      <div>Dashboard</div>
+    <>
+    <Box sx={{display:'flex',paddingRight:'10%',marginLeft:'10%'}}>
       <AdTable />
+      <AdDonut/>
+    </Box>
+      </>
     </>
   );
 }
